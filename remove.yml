@@ -1,0 +1,10 @@
+---
+
+- name: This is my second play
+  hosts: all
+  user: rahul
+  tasks:
+  - name: Delete File
+    file: path=/var/tmp/rahul state=absent
+
+...

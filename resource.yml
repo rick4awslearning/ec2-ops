@@ -1,0 +1,20 @@
+---
+- hosts: localhost
+  roles:
+     - role: ec2_create
+       name: ec2_create
+       tags: create
+
+     - role: ec2_start
+       name: ec2_start
+       tags: start
+
+     - role: ec2_stop
+       name: ec2_stop
+       tags: stop
+
+     - role: ec2_terminate 
+       name: ec2_terminate
+       tags: terminate
+
+

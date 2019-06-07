@@ -1,0 +1,12 @@
+---
+# vars file for ec2_start
+
+instance_ids:
+ - i-06ddf797a225047e7
+ - i-083b3cc4f68128a19
+
+my_region:
+ - us-east-1
+
+subnet:
+ - vpc-0a88e4b3c29566f71

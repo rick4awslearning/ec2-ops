@@ -1,0 +1,13 @@
+---
+
+- name: Launch EC2 instance
+  ec2:
+     key_name: office
+     instance_type: t2.micro
+     image: ami-0de53d8956e8dcf80
+     wait: yes
+     group: webSG
+     count: 1
+     vpc_subnet_id: subnet-00bbaa0a7b433d61c
+     assign_public_ip: yes
+     region: us-east-1

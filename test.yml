@@ -1,0 +1,10 @@
+---
+
+- name: This is my first play
+  hosts: all
+  user: rahul
+  tasks:
+  - name: Create File
+    file: path=/var/tmp/rahul state=touch
+
+...

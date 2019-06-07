@@ -1,0 +1,15 @@
+---
+- name: File and Directory creation
+  hosts: all
+  user: rahul
+  tasks:
+  - name: Directory creation with Root ownership
+    file: path=/var/tmp/ddirectorytest mode=0777 owner=rahul group=rahul state=directory
+
+  - name: File creation
+    file: path=/var/tmp/ddirectorytest/filetest owner=rahul group=rahul mode=0666 state=touch
+
+  - name: Copy files
+    copy: src=/var/log/messages dest=/var/tmp/ddirectorytest/filetest
+
+...

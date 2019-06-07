@@ -1,0 +1,4 @@
+---
+# vars file for testrole
+ntp_pkgs: ntp
+ntp_service: ntpd

@@ -1,0 +1,12 @@
+---
+
+- name: Start EC2 instance
+  ec2:
+    instance_ids: '{{ instance_ids }}'
+#    region: '{{ my_region }}'
+    region: 'us-east-1'
+    state: running
+    wait: True
+    vpc_subnet_id: '{{subnet}}'
+   # assign_public_ip: yes
+
